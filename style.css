@@ -1,0 +1,118 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+body {
+    background-size: cover;
+}
+
+#vanta {
+    z-index: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+video {
+    z-index: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main {
+    position: relative;
+    opacity: 0;
+    filter: blur(10px);
+    transition: opacity 2s ease-in-out, filter 2s ease-in-out;
+    -webkit-transition: opacity 2s ease-in-out, filter 2s ease-in-out;
+    -moz-transition: opacity 2s ease-in-out, filter 2s ease-in-out;
+    -ms-transition: opacity 2s ease-in-out, filter 2s ease-in-out;
+    -o-transition: opacity 2s ease-in-out, filter 2s ease-in-out;
+    -webkit-filter: blur(10px);
+}
+
+header {
+    margin-top: 2em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header > img {
+    width: 8.5em;
+    height: 8.5em;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    border: 1px solid #fff;
+    box-shadow: rgb(28 32 93 / 24%) 0px 2px 8px 0px;
+}
+
+header > h1 {
+    display: inline-block;
+    font-size: 0.8em;
+    font-weight: bold;
+    border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
+    background-color: #000a;
+    color: #fff;
+    padding: 0.3em 0.6em;
+    border: 1px solid #fffa;
+    backdrop-filter: blur(10px) saturate(160%) contrast(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(160%) contrast(180%);
+}
+
+ul {
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0 auto;
+    padding: 1.7em;
+    max-width: 400px ;
+}
+
+ul > li {
+    background-color: #fffa;
+    backdrop-filter: blur(10px) saturate(160%) contrast(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(160%) contrast(180%);
+    border-radius:  10em;
+    -webkit-border-radius:  10em;
+    -moz-border-radius:  10em;
+    -ms-border-radius:  10em;
+    -o-border-radius:  10em;
+    padding: 1em;
+    margin: 1.4em 0;
+    box-shadow: rgb(28 32 93 / 24%) 0px 2px 8px 0px;
+}
+
+ul > li > a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+
+ul :hover {
+    background-color: azure;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.3em;
+}
